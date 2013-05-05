@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'Conv_olney_light';
+	src: url('../fonts/olney_light.eot');
+	src: local('☺'), url('../fonts/olney_light.woff') format('woff'), url('../fonts/olney_light.ttf') format('truetype'), url('../fonts/olney_light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html {
+	font-family: 'Conv_olney_light',Sans-Serif;
+}
+
+#container {
+	width: 400px;
+}
+
+#ticker-header {
+	width: 400px;
+	height: 45px;
+	background: url(../img/ticker-header.jpg)
+}
+
+#ticker-container {
+	height: 87px;
+	width: 400px;
+	overflow: hidden;
+	background: url(../img/ticker-scroll-bg.jpg);
+}
+
+#breaking {
+	font-size: 8px;
+	color: red;
+	padding: 10px 0 0 30px;
+}
+
+#ticker {
+	position: relative;
+	width: 20000px;
+	left: 400px;
+	top: -10px;
+}
+
+#ticker ul li {
+	text-decoration: none;
+	display: inline;
+	font-size: 30px;
+	color: white;
+	padding-right: 500px;
+}
+
+#news-box {
+	width: 400px;
+	height: 270px;
+	background-color: black;
+	overflow: hidden;
+}
+
+.red-bar {
+	width: 1px;
+	height: 50px;
+	float: left;
+	position: relative;
+	left: 30px;
+	top: 20px;
+	background-color: #ff0000;
+	transition: width .3s;
+	-moz-transition: width .3s; /* Firefox 4 */
+	-webkit-transition: width .3s; /* Safari and Chrome */
+	-o-transition: width .3s; /* Opera */
+}
+
+.news-content:hover .red-bar {
+	width: 4px;
+}
+
+.news-content {
+	position: relative;
+	width: 400px;
+	height: 90px;
+	background: url(../img/ticker-bg.jpg);
+	cursor: pointer;
+}
+
+.news-text {
+	color: #fff;
+	font-size: 18px;
+	padding: 20px 0 0 60px;
+}
+
+.news-thumb {
+	float: right;
+	position: relative;
+	top: 20px;
+	right: 20px;
+}
+
+.news-subtext {
+	color: #ff0000;
+	font-size: 10px;
+	padding: 5px 0 0 60px;
+}
+
+.expanded {
+	width: 400px;
+}
+
+.expanded p {
+	height: 100%;
+	color: white;
+	font-size: 14px;
+	padding: 20px;
+}
+
+#expanded-1, #expanded-2, #expanded-3, #expanded-4, #expanded-5, #expanded-6, #expanded-7, #expanded-8, #expanded-9, #expanded-10, #expanded-11, #expanded-12, #expanded-13 {
+	display: none;
+}
+
+#ticker-bottom {
+	width: 400px;
+	height: 27px;
+	background: url(../img/ticker-bg-bottom.jpg);
+}
+
+#ticker-bottom #more {
+	position: relative;
+	float: left;
+	top: 5px;
+	left: 85px;
+}
+
+#ticker-bottom .more-text {
+	float: left;
+	position: relative;
+	top: 8px;
+	left: 20px;
+	color: white;
+	font-size: 11px;
+}
